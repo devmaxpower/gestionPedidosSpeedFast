@@ -52,7 +52,7 @@ public class VentanaPrincipal extends JFrame {
      * Método principal (Entry Point) para iniciar la aplicación.
      */
     public static void main(String[] args) {
-        // Ejecutar la interfaz gráfica en el hilo de eventos de Swing de forma segura[cite: 3]
+        // Ejecutar la interfaz gráfica en el hilo de eventos de Swing de forma segura
         SwingUtilities.invokeLater(() -> {
             try {
                 // Cambiar el diseño visual para que se vea como el sistema operativo nativo

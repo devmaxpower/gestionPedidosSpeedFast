@@ -1,7 +1,7 @@
 package model;
 
 /**
- * Representa los estados posibles de un pedido en el sistema SpeedFast[cite: 1].
+ * Representa los estados posibles de un pedido en el sistema SpeedFast
  *
  * @author Maximiliano Villalobos
  */

@@ -13,7 +13,7 @@ import java.awt.*;
 
 /**
  * Panel de interfaz gráfica para la gestión de Entregas.
- * Permite asociar un Repartidor con un Pedido y listar las entregas[cite: 2].
+ * Permite asociar un Repartidor con un Pedido y listar las entregas.
  *
  * @author Maximiliano Villalobos
  * @version 1.0
@@ -59,7 +59,7 @@ public class GestionEntregasPanel extends JPanel {
         modeloTabla = new DefaultTableModel(new Object[]{"ID Entrega", "Repartidor", "Detalle Pedido", "Fecha/Hora"}, 0) {
             @Override
             public boolean isCellEditable(int row, int column) {
-                return false; // Evita la edición directa en la tabla[cite: 2]
+                return false; // Evita la edición directa en la tabla
             }
         };
         tablaEntregas = new JTable(modeloTabla);
@@ -91,7 +91,7 @@ public class GestionEntregasPanel extends JPanel {
             return;
         }
 
-        // Se extrae el ID internamente desde el objeto seleccionado en el JComboBox[cite: 2]
+        // Se extrae el ID internamente desde el objeto seleccionado en el JComboBox
         Entrega entrega = new Entrega(repartidor.getId(), pedido.getId());
 
         if (entregaDAO.registrarEntrega(entrega)) {
@@ -123,7 +123,7 @@ public class GestionEntregasPanel extends JPanel {
     }
 
     /**
-     * Refresca los JComboBox cuando se crean, editan o eliminan entidades[cite: 2].
+     * Refresca los JComboBox cuando se crean, editan o eliminan entidades.
      * También recarga la tabla principal.
      */
     public void actualizarDatos() {
